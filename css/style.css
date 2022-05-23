@@ -1,0 +1,622 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  background: #f8efea;
+  font-size: 62.5%;
+}
+
+#logo {
+  filter: drop-shadow(1px 1px 0 #73535C);
+  font-family: 'Lobster', cursive;
+  font-size: 3.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #BF8A9A;
+}
+
+/* -------------------- buttons --------------------- */
+
+.button {
+  width: 140px;
+  height: 45px;
+  background: #f7ece9;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.7rem;
+  padding: 5px;
+
+}
+
+.black a {
+  color: black;
+}
+
+.black {
+  background: #f8efea;
+}
+
+.black:hover {
+  background: #e5dcd7;
+  filter: drop-shadow(3px 3px 0 #1B7A96);
+}
+
+.darkbutton {
+  background: #1B7A96;
+}
+
+.darkbutton a {
+  color: #f7ece9;
+}
+
+.darkbutton:hover {
+  background: #27ADD6;
+  filter: drop-shadow(3px 3px 0 #0D3B49);
+}
+
+/* -------------------- font/text --------------------- */
+
+h1, h2, h3, h4, span, .button, h4, strong, .couponContainer p {
+  font-family: 'Sansita', sans-serif;
+  text-transform: uppercase;
+}
+
+.couponContainer h4, .couponContainer p, .couponContainer strong, .container p, .momentumContainer p, .adContainer p, .adContainer strong {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  color: #f8efea;
+  filter: drop-shadow(3px 3px 0 #27ADD6);
+  font-size: 8rem;
+  padding-bottom: 20px;
+}
+
+h4 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  padding: 20px 0 20px 20px;
+  border-left: 5px solid black;
+}
+
+h2, h3, h4, h5 {
+  color: #104657;
+}
+
+.container p, .momentumContainer p {
+  color: black;
+}
+
+main span {
+  color: #f8efea;
+  font-size: 1.8rem;
+}
+
+.couponContainer p {
+  padding: 0 25px;
+  font-size: 1.4rem;
+  line-height: 2em;
+}
+
+.container i {
+  font-size: 3.6rem;
+}
+
+.container h3 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  padding: 5% 0;
+}
+
+.container p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.container i {
+  color: #27ADD6;
+}
+
+.momentumContainer p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  padding-bottom: 7%;
+}
+
+h5 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.stylistContainer span {
+  font-size: 1.2rem;
+  text-align: center;
+  display: block;
+}
+
+.lookbook h3 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  padding: 5% 0;
+  text-align: center;
+}
+
+.adContainer h4 {
+  border: none;
+  filter: drop-shadow(2px 2px 0px #f8efea);
+  font-weight: bold;
+  font-size: 4.6rem;
+  padding: 0;
+}
+
+.adContainer p {
+  color: #f8efea;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  padding: 5% 0 10% 0;
+  
+}
+
+.adContainer strong {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* ------------------------ HEADER / NAV ------------------------ */
+header {
+  background: #f8efea;
+  width: 100%;
+  float: left;
+  height: 55px;
+}
+
+nav {
+  width: 65%;
+  float: left;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17px;
+  height: 55px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Sansita', sans-serif;
+  font-weight: 700;
+}
+
+nav a:hover {
+  border-bottom: 4px solid #27ADD6;
+}
+
+header i, nav a {
+  color: black;
+  font-size: 1.8rem;
+}
+
+.logo {
+  width: 20%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+header .bookonline {
+  width: 15%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/* ------------------------ MAIN ------------------------ */
+
+main {
+  background: url('assets/pexels-hannah-nelson-1065084.jpg') no-repeat;
+  background-size: cover;
+  /* background-position-x: right; */
+  height: 100vh;
+  padding: 8% 0 0 5%;
+}
+
+main .button {
+  margin: 25px 0 25px 0;
+}
+
+.couponContainer {
+  padding: 10px 0;
+  width: 250px;
+  height: 225px;
+  background: #f8efea;
+  color: black;
+}
+
+.couponContainer .button {
+  margin: 15px 0px 15px 55px;
+}
+
+/* ------------------------ BELOW MAIN ------------------------ */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 3% 15%;
+}
+
+.container section {
+  width: 33%;
+  text-align: center;
+  margin: 0 2%;
+}
+
+/* ------------------------ MOMENTUM ------------------------ */
+
+.momentumContainer {
+  background: linear-gradient(135deg, #f2ddd7 0%, #f8efea 100%);
+}
+
+.momentumContainer > section {
+  float: left;
+  width: 50%;
+  padding: 5% 2% 5% 15%;
+}
+
+.momentumContainer img {
+  float: left;
+  width: 50%;
+  padding: 5% 15% 5% 2%;
+}
+
+.momentumContainer .button {
+  margin-top: 10%;
+}
+
+/* ------------------------ STYLISTS ------------------------ */
+
+.stylistHeader h2 {
+  text-align: center;
+  padding: 5% 0 2% 0;
+}
+
+.stylistContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 3% 15%;
+}
+
+.stylistContainer section {
+  width: 33%;
+  margin: 0 2%;
+}
+
+.stylistContainer img {
+  width: 95%;
+  position: relative;
+}
+
+.stylistContainer .button {
+  color: #f8efea;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 45px;
+}
+
+/* ------------------------ AD CONTAINER ------------------------ */
+
+.adContainer {
+  background: url('assets/adphoto.jpg') no-repeat;
+  background-size: cover;
+  width: 80%;
+  height: 350px;
+  margin: 5% 10% 0 10%;
+}
+
+.adContainer section {
+  float: left;
+  padding: 5% 3%;
+}
+
+/* ------------------------ LOOKBOOK ------------------------ */
+
+.lookbook {
+  width: 100%;
+  padding: 0 15%;
+}
+
+.col-1, .col-2, .col-3 {
+  width: 33.33%;
+  padding: 0 10px;
+  float: left;
+}
+
+.smallImage {
+  width: 100%;
+  height: 300px;
+  background: pink;
+  margin-bottom: 20px;
+}
+
+.longImage {
+  width: 100%;
+  height: 500px;
+  background: lightgreen;
+  margin-bottom: 20px;
+}
+
+.lookbook .smallImage img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.lookbook .longImage img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.lookbook p {
+  text-align: center;
+  padding: 0 0 5% 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ------------------------ FOOTER ------------------------ */
+
+.footer-distributed {
+  background-color: #104657;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #f8efea;
+  font: normal 36px "Cookie", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #f8efea;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #092933;
+  color: #f8efea;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #f8efea;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #27ADD6;
+  text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #f8efea;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #092933;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #f8efea;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  .logo {
+    width: 35%;
+  }
+  .logo a {
+    font-size: 1.75em;
+    padding-left: 20px;
+  }
+  .logo i {
+    padding-right: 10px;
+  }
+  nav {
+    width: 35%;
+  }
+  nav ul {
+    justify-content: flex-end;
+  }
+  nav li {
+    padding-left: 25px;
+  }
+  header .button {
+    float: right;
+    width: 30%;
+    font-size: .78em;
+  }
+  main h1 {
+    font-size: 2.75em;
+  }
+  main {
+    padding-top: 100px;
+    height: 725px;
+  }
+  main span {
+    font-size: .75em;
+  }
+}
+
+@media screen and (min-width: 451px) {
+  .logo i {
+    display:none;
+  }
+}
