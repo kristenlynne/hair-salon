@@ -22,17 +22,17 @@
 /*******************************************/
 
 html {
-  background: #f8efea;
+  background: #F2EFE9;
   font-size: 62.5%;
 }
 
 #logo {
-  filter: drop-shadow(1px 1px 0 #73535C);
+  filter: drop-shadow(1px 1px 0 #40160d);
   font-family: 'Lobster', cursive;
   font-size: 3.5rem;
   text-decoration: none;
   font-weight: 700;
-  color: #BF8A9A;
+  color: #c04023;
 }
 
 /* -------------------- buttons --------------------- */
@@ -40,7 +40,7 @@ html {
 .button {
   width: 140px;
   height: 45px;
-  background: #f7ece9;
+  background: #F2EFE9;
   padding: 12px 10px;
   text-align: center;
 }
@@ -59,25 +59,25 @@ html {
 }
 
 .black {
-  background: #f8efea;
+  background: #F2EFE9;
 }
 
 .black:hover {
-  background: #e5dcd7;
-  filter: drop-shadow(3px 3px 0 #1B7A96);
+  background: #e4e1db;
+  filter: drop-shadow(3px 3px 0 #A6442E);
 }
 
 .darkbutton {
-  background: #1B7A96;
+  background: #8C715A;
 }
 
 .darkbutton a {
-  color: #f7ece9;
+  color: #F2EFE9;
 }
 
 .darkbutton:hover {
-  background: #27ADD6;
-  filter: drop-shadow(3px 3px 0 #0D3B49);
+  background: #7c6451;
+  filter: drop-shadow(3px 3px 0 #574739);
 }
 
 /* -------------------- font/text --------------------- */
@@ -92,10 +92,10 @@ h1, h2, h3, h4, span, .button, h4, strong, .couponContainer p {
 }
 
 h1 {
-  color: #f8efea;
-  filter: drop-shadow(3px 3px 0 #27ADD6);
-  font-size: 8rem;
-  padding-bottom: 20px;
+  color: #F2EFE9;
+  filter: drop-shadow(5px 5px 10px #2E1713);
+  font-size: 11rem;
+  padding-bottom: 50px;
 }
 
 h4 {
@@ -106,7 +106,7 @@ h4 {
 }
 
 h2, h3, h4, h5 {
-  color: #104657;
+  color: #A6442E;
 }
 
 .container p, .momentumContainer p {
@@ -114,8 +114,8 @@ h2, h3, h4, h5 {
 }
 
 main span {
-  color: #f8efea;
-  font-size: 1.8rem;
+  color: #F2EFE9;
+  font-size: 2rem;
 }
 
 .couponContainer p {
@@ -140,7 +140,7 @@ main span {
 }
 
 .container i {
-  color: #27ADD6;
+  color: #D9CDB8;
 }
 
 .momentumContainer p {
@@ -174,14 +174,14 @@ h5 {
 
 .adContainer h4 {
   border: none;
-  filter: drop-shadow(2px 2px 0px #f8efea);
+  filter: drop-shadow(2px 2px 0px #F2EFE9);
   font-weight: bold;
   font-size: 4.6rem;
   padding: 0;
 }
 
 .adContainer p {
-  color: #f8efea;
+  color: #F2EFE9;
   font-size: 2rem;
   line-height: 2.5rem;
   text-transform: uppercase;
@@ -201,7 +201,7 @@ h5 {
 
 /* ------------------------ HEADER / NAV ------------------------ */
 header {
-  background: #f8efea;
+  background: #F2EFE9;
   width: 100%;
   float: left;
   height: 55px;
@@ -226,7 +226,7 @@ nav a {
 }
 
 nav a:hover {
-  border-bottom: 4px solid #27ADD6;
+  border-bottom: 4px solid #D9CDB8;
 }
 
 header i, nav a {
@@ -253,24 +253,23 @@ header .bookonline {
 /* ------------------------ MAIN ------------------------ */
 
 main {
-  background: url('assets/pexels-hannah-nelson-1065084.jpg') no-repeat;
+  background: url('assets/mainphoto.jpg') no-repeat;
   background-size: cover;
-  /* background-position-x: right; */
   height: 100vh;
-  padding: 8% 0 0 5%;
+  padding: 10% 0 0 5%;
 }
 
 main .button {
-  margin: 25px 0 25px 0;
+  margin: 50px 0 25px 0;
 }
 
-.couponContainer {
+/* .couponContainer {
   padding: 10px 0;
   width: 250px;
   height: 225px;
   background: #f8efea;
   color: black;
-}
+} */
 
 .couponContainer .button {
   margin: 15px 0px 15px 55px;
@@ -283,19 +282,19 @@ main .button {
   justify-content: space-evenly;
   align-content: center;
   align-items: center;
-  height: 250px;
+  height: fit-content;
 }
 
 .container section {
   width: 25%;
   text-align: center;
-  margin: 0 2%;
+  margin: 8% 2%;
 }
 
 /* ------------------------ MOMENTUM ------------------------ */
 
 .momentumContainer {
-  background: linear-gradient(135deg, #f2ddd7 0%, #f8efea 100%);
+  background: linear-gradient(135deg, #D9CDB8 0%, #f3ebdf 100%);
 }
 
 .momentumContainer > section {
@@ -341,12 +340,16 @@ main .button {
 }
 
 .stylistContainer .button {
-  color: #f8efea;
+  color: #F2EFE9;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   position: relative;
   margin-top: -15px;
+}
+
+.stylistContainer h5 {
+  color: #fff;
 }
 
 /* ------------------------ AD CONTAINER ------------------------ */
@@ -412,14 +415,17 @@ main .button {
 
 /* ------------------------ FOOTER ------------------------ */
 
+.footer h1, footer h2, footer h3,  footer h4, footer h5, footer span, footer p, footer a {
+  font-family: 'Lato', sans-serif;
+}
+
 .footer-distributed {
-  background-color: #104657;
+  background-color: #A6442E;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-
   padding: 55px 50px;
   margin-top: 80px;
 }
@@ -440,19 +446,18 @@ main .button {
 /* The company logo */
 
 .footer-distributed h3 {
-  color: #f8efea;
-  font: normal 36px "Cookie", cursive;
+  color: #F2EFE9;
   margin: 0;
 }
 
 .footer-distributed h3 span {
-  color: #5383d3;
+  color: #fff;
 }
 
 /* Footer links */
 
 .footer-distributed .footer-links {
-  color: #f8efea;
+  color: #F2EFE9;
   margin: 20px 0 12px;
   padding: 0;
 }
@@ -465,7 +470,7 @@ main .button {
 }
 
 .footer-distributed .footer-company-name {
-  color: #8f9296;
+  color: #D9CDB8;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -478,9 +483,9 @@ main .button {
 }
 
 .footer-distributed .footer-center i {
-  background-color: #092933;
-  color: #f8efea;
-  font-size: 25px;
+  background-color: #642a1c;
+  color: #F2EFE9;
+  font-size: 20px;
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -497,7 +502,7 @@ main .button {
 
 .footer-distributed .footer-center p {
   display: inline-block;
-  color: #f8efea;
+  color: #F2EFE9;
   vertical-align: middle;
   margin: 0;
 }
@@ -510,7 +515,7 @@ main .button {
 }
 
 .footer-distributed .footer-center p a {
-  color: #27ADD6;
+  color: #D9CDB8;
   text-decoration: none;
 }
 
@@ -530,7 +535,7 @@ main .button {
 
 .footer-distributed .footer-company-about span {
   display: block;
-  color: #f8efea;
+  color: #F2EFE9;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -545,11 +550,11 @@ main .button {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color: #092933;
+  background-color: #642a1c;
   border-radius: 2px;
 
   font-size: 20px;
-  color: #f8efea;
+  color: #F2EFE9;
   text-align: center;
   line-height: 35px;
 
@@ -587,38 +592,58 @@ main .button {
     display: none;
   }
   .logo {
-    width: 35%;
+    width: 60%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
   }
   .logo a {
-    font-size: 1.75em;
-    padding-left: 20px;
+    font-size: 1em;
+    padding-left: 15px;
   }
   .logo i {
-    padding-right: 10px;
+    padding-right: 25px;
+  }
+  #logo {
+    font-size: 3rem;
+    float: left;
   }
   nav {
-    width: 35%;
+    display: none;
   }
-  nav ul {
-    justify-content: flex-end;
-  }
-  nav li {
-    padding-left: 25px;
-  }
-  header .button {
-    float: right;
-    width: 30%;
-    font-size: .78em;
-  }
-  main h1 {
-    font-size: 2.75em;
+
+  header .bookonline {
+    width: 40%;
   }
   main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1px;
+    height: 95vh;
+  }
+  main h1 {
+    font-size: 7.5em;
+    text-align: center;
+    padding: 0;
+    margin: none;
+  }
+  /* main {
     padding-top: 100px;
     height: 725px;
-  }
+  } */
   main span {
-    font-size: .75em;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+  }
+  main .button {
+    margin: 0;
+  }
+  main {
+    background: url('assets/mainphotoflipped.jpg') no-repeat;
+    background-size: cover;
   }
 }
 
